@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="World population"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_28sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Ten most popular countries"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <TextView
+        android:id="@+id/tvWorld"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="WORLD"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSubtitle" />
+
+    <ProgressBar
+        android:id="@+id/pbWorld"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/custom_progressbar_bg"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_80sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvWorldNumber"
+        app:layout_constraintTop_toBottomOf="@+id/tvSubtitle" />
+
+    <TextView
+        android:id="@+id/tvWorldNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_28sdp"
+        android:layout_marginEnd="@dimen/_3sdp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="7,752,840,000"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSubtitle" />
+
+    <TextView
+        android:id="@+id/tvChina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_22sdp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="CHINA"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWorld" />
+
+    <ProgressBar
+        android:id="@+id/pbChina"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/custom_progressbar_bg"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintEnd_toStartOf="@+id/tvChinaNumber"
+        android:layout_marginStart="@dimen/_75sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pbWorld" />
+
+    <TextView
+        android:id="@+id/tvChinaNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_23sdp"
+        android:layout_marginEnd="@dimen/_3sdp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="1,402,112,000"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWorldNumber" />
+
+
+    <TextView
+        android:id="@+id/tvIndia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_22sdp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="INDIA"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvChina" />
+
+    <ProgressBar
+        android:id="@+id/pbIndia"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/custom_progressbar_bg"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintEnd_toStartOf="@+id/tvIndiaNumber"
+        android:layout_marginStart="@dimen/_85sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvIndia"
+        app:layout_constraintTop_toBottomOf="@+id/pbChina" />
+
+    <TextView
+        android:id="@+id/tvIndiaNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_23sdp"
+        android:layout_marginEnd="@dimen/_3sdp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="1,380,004,000"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvChinaNumber" />
+
+    <TextView
+        android:id="@+id/tvUSA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_23sdp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="USA"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvIndia" />
+
+    <ProgressBar
+        android:id="@+id/pbUSA"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/custom_progressbar_bg"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_24sdp"
+        app:layout_constraintEnd_toStartOf="@+id/tvIndiaNumber"
+        android:layout_marginStart="@dimen/_85sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvUSA"
+        app:layout_constraintTop_toBottomOf="@+id/pbIndia" />
+
+    <TextView
+        android:id="@+id/tvUSANumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_21sdp"
+        android:layout_marginEnd="@dimen/_3sdp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="329,484,000"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/pbUSA"
+        app:layout_constraintTop_toBottomOf="@+id/tvIndiaNumber" />
+
+
+    <TextView
+        android:id="@+id/tvINDON"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_22sdp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="INDONESIA"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUSA" />
+
+    <ProgressBar
+        android:id="@+id/pbINDON"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/custom_progressbar_bg"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintEnd_toStartOf="@+id/tvIndiaNumber"
+        android:layout_marginStart="@dimen/_85sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvINDON"
+        app:layout_constraintTop_toBottomOf="@+id/pbUSA" />
+
+    <TextView
+        android:id="@+id/tvINDONNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_21sdp"
+        android:layout_marginEnd="@dimen/_3sdp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="273,523,000"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/pbUSA"
+        app:layout_constraintTop_toBottomOf="@+id/tvUSANumber" />
+
+    <TextView
+        android:id="@+id/tvPack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_22sdp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="PACKISTAN"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvINDON" />
+
+    <ProgressBar
+        android:id="@+id/pbPack"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/custom_progressbar_bg"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_24sdp"
+        app:layout_constraintEnd_toStartOf="@+id/tvINDONNumber"
+        android:layout_marginStart="@dimen/_80sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvINDON"
+        app:layout_constraintTop_toBottomOf="@+id/pbINDON" />
+
+    <TextView
+        android:id="@+id/tvPackNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_23sdp"
+        android:layout_marginEnd="@dimen/_3sdp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="220,892,000"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/pbINDON"
+        app:layout_constraintTop_toBottomOf="@+id/tvINDONNumber" />
+
+
+    <TextView
+        android:id="@+id/tvBrazil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_22sdp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="BRAZIL"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPack" />
+
+    <ProgressBar
+        android:id="@+id/pbBrazil"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/custom_progressbar_bg"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_24sdp"
+        app:layout_constraintEnd_toStartOf="@+id/tvINDONNumber"
+        android:layout_marginStart="@dimen/_80sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvPack"
+        app:layout_constraintTop_toBottomOf="@+id/pbPack" />
+
+    <TextView
+        android:id="@+id/tvBrazilNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_23sdp"
+        android:layout_marginEnd="@dimen/_3sdp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="212,559,000"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/pbPack"
+        app:layout_constraintTop_toBottomOf="@+id/tvPackNumber" />
+
+    <TextView
+        android:id="@+id/tvNigeria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_22sdp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="NIGERIA"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBrazil" />
+
+    <ProgressBar
+        android:id="@+id/pbNigeria"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/custom_progressbar_bg"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintEnd_toStartOf="@+id/tvINDONNumber"
+        android:layout_marginStart="@dimen/_80sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvPack"
+        app:layout_constraintTop_toBottomOf="@+id/pbBrazil" />
+
+
+    <TextView
+        android:id="@+id/tvNigeriaNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_21sdp"
+        android:layout_marginEnd="@dimen/_3sdp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="206,139,000"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/pbBrazil"
+        app:layout_constraintTop_toBottomOf="@+id/tvBrazilNumber" />
+
+
+    <TextView
+        android:id="@+id/tvBangladesh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_22sdp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="BANGLADESH"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNigeria" />
+
+    <ProgressBar
+        android:id="@+id/pbBangladesh"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/custom_progressbar_bg"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintEnd_toStartOf="@+id/tvINDONNumber"
+        android:layout_marginStart="@dimen/_80sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvPack"
+        app:layout_constraintTop_toBottomOf="@+id/pbNigeria" />
+
+
+    <TextView
+        android:id="@+id/tvBangladeshNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_21sdp"
+        android:layout_marginEnd="@dimen/_3sdp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="164,689,000"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/pbNigeria"
+        app:layout_constraintTop_toBottomOf="@+id/tvNigeriaNumber" />
+
+
+    <TextView
+        android:id="@+id/tvRussia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_22sdp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="RUSSIA"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBangladesh" />
+
+    <ProgressBar
+        android:id="@+id/pbRussia"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/custom_progressbar_bg"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintEnd_toStartOf="@+id/tvINDONNumber"
+        android:layout_marginStart="@dimen/_80sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvRussia"
+        app:layout_constraintTop_toBottomOf="@+id/pbBangladesh" />
+
+
+    <TextView
+        android:id="@+id/tvRussiaNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_21sdp"
+        android:layout_marginEnd="@dimen/_3sdp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="144,104,000"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/pbBangladesh"
+        app:layout_constraintTop_toBottomOf="@+id/tvBangladeshNumber" />
+
+    <TextView
+        android:id="@+id/tvMexico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_22sdp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="MEXICO"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRussia" />
+
+    <ProgressBar
+        android:id="@+id/pbMexico"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/custom_progressbar_bg"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintEnd_toStartOf="@+id/tvINDONNumber"
+        android:layout_marginStart="@dimen/_80sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvRussia"
+        app:layout_constraintTop_toBottomOf="@+id/pbRussia" />
+
+
+    <TextView
+        android:id="@+id/tvMexicoNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_21sdp"
+        android:layout_marginEnd="@dimen/_3sdp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="128,932,000"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/pbRussia"
+        app:layout_constraintTop_toBottomOf="@+id/tvRussiaNumber" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
